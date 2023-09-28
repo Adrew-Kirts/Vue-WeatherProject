@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import CitiesList from "@/views/CitiesList.vue";
+// import CitiesList from "@/views/CitiesList.vue";
 
 // Ajoutez dans votre composant App la méthode `onListClick` qui se contentera pour l'instant de faire une [alerte]
 // (https://developer.mozilla.org/fr/docs/Web/API/Window/alert) pour marquer le fait qu'un utilisateur a cliqué dessus.
@@ -14,20 +14,22 @@ function onListClick() {
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="msg from App" />
-
+      <HelloWorld msg="Weather near you" />
       <nav>
-        <RouterLink to="/">Routerlink - App</RouterLink>
-        <RouterLink to="/about">There</RouterLink>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/ville">Weather</RouterLink>
 
-        <button @click="onListClick">ALERT</button><br><br>
+          <button @click="onListClick">ALERT</button><br><br>
 
-        <CitiesList></CitiesList>
       </nav>
     </div>
   </header>
 
   <RouterView />
+
+//
+    <router-link to="/villes">Villes</router-link>
+
 </template>
 
 <style scoped>
