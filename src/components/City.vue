@@ -1,5 +1,7 @@
 <script>
 
+import { format, render, cancel, register } from 'timeago.js';
+
 // export default {
 //   data(){
 //     return {
@@ -12,6 +14,7 @@
 // }
 
 export default {
+  methods: {format},
   props: {
     name: String,
     weather: String,
@@ -27,7 +30,8 @@ export default {
     <div>
       <h1>Weather in {{ this.name }}</h1>
       <p>It is currently {{ this.weather }} with a temperature of {{ this.temperature }}°C.</p>
-      <p>Last updated at {{ this.updatedAt.toLocaleDateString() }}</p>
+<!--      <p>Last updated at {{ this.updatedAt.toLocaleDateString() }}</p>-->
+      <p>Last updated at {{ format(this.updatedAt) }}</p>
     </div>
 
 </template>
