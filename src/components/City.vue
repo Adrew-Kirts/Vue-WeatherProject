@@ -1,14 +1,22 @@
 <script>
 
-export default {
-  data(){
-    return {
-      name: "Ezraville",
-      weather: "sunny",
-      temperature: 20.55,
-      updatedAt: new Date(),
+// export default {
+//   data(){
+//     return {
+//       name: "Ezraville",
+//       weather: "sunny",
+//       temperature: 20.55,
+//       updatedAt: new Date(),
+//     }
+//   }
+// }
 
-    }
+export default {
+  props: {
+    name: String,
+    weather: String,
+    temperature: Number,
+    updatedAt: Date
   }
 }
 
@@ -16,11 +24,11 @@ export default {
 
 <template>
 
-    <div>
-      <h1>Weather in {{ name }}</h1>
-      <p>It is currently {{ weather }} with a temperature of {{ temperature }}°C.</p>
-      <p>Last updated at {{ updatedAt.toLocaleString() }}</p>
-    </div>
+<!--    <div>-->
+<!--      <h1>Weather in {{ this.name }}</h1>-->
+<!--      <p>It is currently {{ this.weather }} with a temperature of {{ this.temperature }}°C.</p>-->
+<!--      <p>Last updated at {{ this.updatedAt.toLocaleString() }}</p>-->
+<!--    </div>-->
 
 </template>
 

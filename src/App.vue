@@ -20,7 +20,6 @@ function onListClick() {
           <RouterLink to="/ville">Weather</RouterLink>
 
           <button @click="onListClick">ALERT</button><br><br>
-
       </nav>
     </div>
   </header>
