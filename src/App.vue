@@ -32,7 +32,7 @@ function onListClick() {
 
 
     <div>
-      <city v-for="city in citiesList.data().cities" :name="city.name" :weather="city.weather"
+      <city v-for="city in citiesList.data().cities" :key="city.id" :name="city.name" :weather="city.weather"
             :temperature="city.temperature" :updatedAt="city.updatedAt" />
     </div>
 

@@ -1,7 +1,12 @@
 <script>
 
+import city from "@/components/City.vue";
+
 export default {
   computed: {
+    city() {
+      return city
+    }
   },
   data(){
     return {
@@ -30,6 +35,7 @@ export default {
 </script>
 
 <template>
+
 
 <!--  <div class="citiesList">-->
 <!--    <h1>Météo - Liste des villes</h1>-->

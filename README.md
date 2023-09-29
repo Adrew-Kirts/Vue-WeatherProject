@@ -447,6 +447,36 @@ Effectuez l’exercice pour une application Laravel, puis pour une application V
 
 **Votre réponse :**
 
+App Vue.js:
+
+| Serveur web | Navigateur web | 
+| --- | --- | 
+| Router les requêtes HTTP | Afficher les pages web | 
+| Stocker les données de l’application | Effectuer le rendu des pages web |
+Exécuter le code métier de l’application | ...
+
+
+* Le serveur web traite les requêtes HTTP et les route vers les fichiers d'application.
+* Le navigateur web affiche les pages web
+* Le serveur web stocke les données de l'application, telles que les fichiers d'application, les bases de données, etc.
+* Le serveur web peut être utilisé pour exécuter du code métier de l'application, tel que la gestion des requêtes HTTP et la gestion des données de l'application.
+
+
+Pour une app Laravel:
+
+| Serveur web | Navigateur web   | 
+| --- |---| 
+| Router les requêtes HTTP | Afficher les pages web | 
+| Stocker les données de l’application |               |
+Exécuter le code métier de l’application |      
+Effectuer le rendu des pages web |
+
+* Le serveur web traite les requêtes HTTP et les route vers les fichiers d'application.
+* Le navigateur web affiche les pages web générées coté serveur.
+* Le serveur web stocke les données de l'application, telles que les fichiers d'application, les bases de données, etc.
+* Le serveur web peut être utilisé pour exécuter du code métier de l'application, tel que la gestion des requêtes HTTP et la gestion des données de l'application.
+
+---
 
 Fin du préambule
 * * *

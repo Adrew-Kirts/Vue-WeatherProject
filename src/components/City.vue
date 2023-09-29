@@ -31,7 +31,7 @@ export default {
       <h1>Weather in {{ this.name }}</h1>
       <p>It is currently {{ this.weather }} with a temperature of {{ this.temperature }}°C.</p>
 <!--      <p>Last updated at {{ this.updatedAt.toLocaleDateString() }}</p>-->
-      <p>Last updated at {{ format(this.updatedAt) }}</p>
+      <p>Last updated {{ format(this.updatedAt) }}</p>
     </div>
 
 </template>
