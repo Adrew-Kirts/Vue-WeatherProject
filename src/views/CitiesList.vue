@@ -3,10 +3,8 @@
 import city from "@/components/City.vue";
 
 export default {
-  computed: {
-    city() {
-      return city
-    }
+  components: {
+  city
   },
   data(){
     return {
@@ -35,6 +33,13 @@ export default {
 </script>
 
 <template>
+
+  hello
+
+  <div>
+    <city v-for="city in cities" :key="city.id" :name="city.name" :weather="city.weather"
+          :temperature="city.temperature" :updatedAt="city.updatedAt" ></city>
+  </div>
 
 
 <!--  <div class="citiesList">-->

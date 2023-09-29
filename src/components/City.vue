@@ -1,6 +1,6 @@
 <script>
 
-import { format, render, cancel, register } from 'timeago.js';
+import { format } from 'timeago.js';
 
 // export default {
 //   data(){
@@ -14,6 +14,7 @@ import { format, render, cancel, register } from 'timeago.js';
 // }
 
 export default {
+  name: "City.vue",
   methods: {format},
   props: {
     name: String,
@@ -30,7 +31,6 @@ export default {
     <div>
       <h1>Weather in {{ this.name }}</h1>
       <p>It is currently {{ this.weather }} with a temperature of {{ this.temperature }}°C.</p>
-<!--      <p>Last updated at {{ this.updatedAt.toLocaleDateString() }}</p>-->
       <p>Last updated {{ format(this.updatedAt) }}</p>
     </div>
 

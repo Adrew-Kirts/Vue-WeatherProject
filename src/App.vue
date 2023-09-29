@@ -1,9 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import city from "@/components/City.vue";
-import citiesList from "@/views/CitiesList.vue";
-// import CitiesList from "@/views/CitiesList.vue";
+
 
 // Ajoutez dans votre composant App la méthode `onListClick` qui se contentera pour l'instant de faire une [alerte]
 // (https://developer.mozilla.org/fr/docs/Web/API/Window/alert) pour marquer le fait qu'un utilisateur a cliqué dessus.
@@ -30,11 +28,6 @@ function onListClick() {
 
     <router-link to="/villes">Villes</router-link>
 
-
-    <div>
-      <city v-for="city in citiesList.data().cities" :key="city.id" :name="city.name" :weather="city.weather"
-            :temperature="city.temperature" :updatedAt="city.updatedAt" />
-    </div>
 
 
 </template>
